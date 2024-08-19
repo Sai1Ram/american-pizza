@@ -5,6 +5,9 @@ import Navbar from "../components/NavBar";
 import { motion, useScroll, useTransform } from "framer-motion";
 import AboutSection from "../components/aboutSection";
 import OurMenu from "../components/OurMenu";
+import Footer from "../components/footer";
+import { Divider } from "@mui/material";
+import  Testimonial from "../components/testimonial";
 
 
 const Home = () => {
@@ -43,7 +46,7 @@ const Home = () => {
           className="z-[3] text-white text-center flex justify-center items-center flex-col bg-violet-100/20 h-full w-full py-4"
         >
           <div className="flex flex-col justify-center items-center mt-52">
-            <h1 className="lg:text-6xl md:text-5xl text-3xl font-bold mb-4 capitalize font-['Kalnia',_serif]">
+            <h1 className="lg:text-6xl  text-3xl font-bold mb-4 capitalize font-['Kalnia',_serif]">
               ALL FAST FOOD ARE AVAILABLE HERE
             </h1>
             <div className="my-4">
@@ -70,12 +73,11 @@ const Home = () => {
       <section>
         <OurMenu />
       </section>
-      {/*
-      <section className="Testimonial">
-        <Slide />
+      <section>
+        <Testimonial />
       </section>
-      <ContactUs ref={contactRef} />
-      <Footer /> */}
+      <Divider />
+      <Footer/>
     </>
   );
 };
