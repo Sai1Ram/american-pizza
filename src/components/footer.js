@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.jpg";
 import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className="flex lg:px-24 lg:py-8  p-4 justify-start items-center w-full bg-secondary text-tertiary drop-shadow-md   gap-x-8">
+    <div className="flex lg:px-24 lg:py-8  p-4 justify-start items-center w-full bg-secondary text-tertiary drop-shadow-md   gap-x-8" id="footer">
       <div className="">
         <img
           src={logo}

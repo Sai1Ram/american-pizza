@@ -7,17 +7,14 @@ import AboutSection from "../components/aboutSection";
 import OurMenu from "../components/OurMenu";
 import Footer from "../components/footer";
 import { Divider } from "@mui/material";
-import  Testimonial from "../components/testimonial";
-
+import Testimonial from "../components/testimonial";
 
 const Home = () => {
-
   // Use the useScroll hook to track the scroll progress
   const { scrollYProgress } = useScroll();
 
   // Map the scroll progress to a y translation value
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-
 
   return (
     <>
@@ -46,8 +43,13 @@ const Home = () => {
           className="z-[3] text-white text-center flex justify-center items-center flex-col bg-violet-100/20 h-full w-full py-4"
         >
           <div className="flex flex-col justify-center items-center mt-52">
-            <h1 className="lg:text-6xl  text-3xl font-bold mb-4 capitalize font-['Kalnia',_serif]">
-              ALL FAST FOOD ARE AVAILABLE HERE
+            <h1
+              className="lg:text-6xl  text-3xl font-bold mb-4 capitalize"
+              style={{
+                fontFamily: "'Playwrite GB S', cursive",
+              }}
+            >
+              All your favorite dishes in one place!
             </h1>
             <div className="my-4">
               <div
@@ -68,7 +70,7 @@ const Home = () => {
         </motion.div>
       </div>
       <section>
-        <AboutSection/>
+        <AboutSection />
       </section>
       <section>
         <OurMenu />
@@ -77,7 +79,7 @@ const Home = () => {
         <Testimonial />
       </section>
       <Divider />
-      <Footer/>
+      <Footer />
     </>
   );
 };

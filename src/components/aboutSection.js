@@ -8,13 +8,11 @@ const AboutSection = () => {
     // Large screens (lg and above)
     radius = 380;
     imageSize = "lg:w-56 lg:h-56";
-  } 
-  else if (screenWidth >= 1024) {
+  } else if (screenWidth >= 1024) {
     // Medium screens (md)
     radius = 280;
     imageSize = "md:w-32 md:h-32";
-  }
-  else if (screenWidth >= 768) {
+  } else if (screenWidth >= 768) {
     // Medium screens (md)
     radius = 200;
     imageSize = "md:w-32 md:h-32";
@@ -31,13 +29,14 @@ const AboutSection = () => {
             className="lg:text-8xl md:text-6xl text-tertiary font-['Pacifico',cursive] m-10"
             style={{
               textShadow: "3px 3px 3px red",
+              // fontFamily: "'Playwrite GB S', cursive",
             }}
           >
             American Pizza Brahmapur
           </h1>
         </div>
         <div className="right bg-primary h-full md:w-1/2 w-full p-3 md:p-8 text-tertiary lg:text-lg text-base ">
-        <h1
+          <h1
             className="md:hidden text-3xl text-tertiary font-['Pacifico',cursive] my-5"
             style={{
               textShadow: "3px 3px 3px blue",
@@ -45,18 +44,14 @@ const AboutSection = () => {
           >
             American Pizza, Brahmapur
           </h1>
-          <p className="font-sans">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
-            reiciendis doloremque blanditiis dolor ducimus iste aliquam id,
-            quaerat nihil voluptatum, sed eveniet, tempore inventore voluptatem.
-            Ipsa facere repellendus, officiis, suscipit omnis architecto dolorem
-            aut praesentium magnam maxime minima quidem adipisci voluptatibus
-            possimus debitis error dignissimos corrupti cumque. Dolorum
-            voluptates recusandae esse, velit molestias minus expedita
-            repellendus repellat, nostrum excepturi iusto praesentium
-            reprehenderit atque consequatur accusamus illo vitae? Reiciendis
-            blanditiis quam repellendus doloremque iure. Sed excepturi quidem
-            earum maxime?
+          <p className="text-xl my-5">
+            American Pizza began its journey in December 2014, opening as the
+            first pizza outlet in the city. Partnering with the renowned
+            international brand Baskin Robbins, we set up shop on a single floor
+            with a mission to satisfy the pizza, ice cream, and food cravings of
+            the city’s food enthusiasts. Located in the culinary capital of
+            Odisha, our outlet has become a go-to destination for food lovers
+            seeking diverse and delightful flavors.
           </p>
         </div>
       </div>

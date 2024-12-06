@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo.jpg";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai'; 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash === "#footer") {
+      const footerSection = document.getElementById("footer");
+      if (footerSection) {
+        footerSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
   return (
-    <div className="bg-primary text-tertiary lg:px-12 px-3 flex items-center w-full justify-between h-24 font-['Kalnia',_serif]">
+    <div className="bg-primary text-tertiary lg:px-12 px-3 flex items-center w-full justify-between h-24">
       <div className="logo bg-primary lg:h-36 md:w-20 md:h-20 w-16 h-16 lg:w-36 lg:p-2 rounded-full lg:translate-y-1/4" onClick={()=>navigate('/')}>
         <img src={logo} alt="" className="rounded-full" />
       </div>
@@ -24,7 +35,7 @@ const NavBar = () => {
           <NavLink to="/" className="text-xl font-semibold hover:opacity-50 uppercase">
             Home
           </NavLink>
-          <NavLink to="/" className="text-xl font-semibold hover:opacity-50 uppercase">
+          <NavLink to="#footer" className="text-xl font-semibold hover:opacity-50 uppercase">
             Contact Us
           </NavLink>
           <button className="bg-secondary text-tertiary px-4 py-2 rounded-full font-semibold hover:opacity-50">
@@ -42,7 +53,7 @@ const NavBar = () => {
         <NavLink to="/" className="text-xl font-semibold hover:opacity-50 uppercase">
           Home
         </NavLink>
-        <NavLink to="/" className="text-xl font-semibold hover:opacity-50 uppercase">
+        <NavLink to="#footer" className="text-xl font-semibold hover:opacity-50 uppercase">
           Contact Us
         </NavLink>
       </div>
