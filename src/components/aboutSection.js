@@ -37,14 +37,14 @@ const AboutSection = () => {
         </div>
         <div className="right bg-primary h-full md:w-1/2 w-full p-3 md:p-8 text-tertiary lg:text-lg text-base ">
           <h1
-            className="md:hidden text-3xl text-tertiary font-['Pacifico',cursive] my-5"
+            className="md:hidden text-4xl text-tertiary font-['Pacifico',cursive] my-5 font-bold"
             style={{
               textShadow: "3px 3px 3px blue",
             }}
           >
             American Pizza, Brahmapur
           </h1>
-          <p className="text-xl my-5">
+          <p className="lg:text-xl text-lg my-5">
             American Pizza began its journey in December 2014, opening as the
             first pizza outlet in the city. Partnering with the renowned
             international brand Baskin Robbins, we set up shop on a single floor

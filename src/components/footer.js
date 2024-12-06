@@ -13,18 +13,18 @@ const Footer = () => {
       </div>
       <div className="">
         <ul>
-          <NavLink to="/" className="lg:text-lg text-xs block">
+          <NavLink to="/" className="lg:text-xl font-semibold text-lg block">
             Home
           </NavLink>
-          <NavLink to="/menu" className="lg:text-lg text-xs">
+          <NavLink to="/menu" className="lg:text-xl font-semibold text-lg">
             Menu
           </NavLink>
-          <li className="lg:text-lg text-xs">Contact</li>
+          <li className="lg:text-xl font-semibold text-lg">Contact</li>
         </ul>
       </div>
       <div className="w-1/3">
-        <p className="lg:text-lg text-xs">Brahmapur, Odisha</p>
-        <p className="lg:text-lg text-xs">1234567890</p>
+        <p className="lg:text-xl font-semibold text-lg">Brahmapur, Odisha</p>
+        <p className="lg:text-xl font-semibold text-lg">1234567890</p>
         {/* <p className="lg:text-lg text-xs">sairamsenapati0022@gmail.com</p> */}
       </div>
       <div className="flex-1 hidden lg:block">

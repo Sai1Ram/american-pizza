@@ -7,7 +7,7 @@ import CardItem from "./card";
 const OurMenu = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full lg:px-24 lg:py-16 p-4 md:p-8 bg-secondary">
+    <div className="w-full lg:px-24 lg:py-16 p-8 bg-secondary">
       <h1 className="text-tertiary md:text-4xl text-2xl uppercase text-center font-semibold">Top Products</h1>
       <ul className="flex lg:gap-4 md:gap-3 gap-1 list-none w-full flex-wrap  justify-center lg:my-10 my-5">
         {

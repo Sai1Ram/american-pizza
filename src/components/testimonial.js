@@ -22,9 +22,9 @@ const Testimonial = () => {
   return (
     <div>
       <div
-        className="w-full bg-primary md:h-screen h-auto flex  flex-col items-center justify-center md:gap-5 gap-2"
+        className="w-full bg-primary md:h-screen h-auto flex  flex-col items-center justify-center lg:gap-5 p-4"
       >
-        <h1 className="text-tertiary md:text-4xl text-xl uppercase ">What people are saying</h1>
+        <h1 className="text-tertiary md:text-4xl text-xl uppercase font-semibold">What people are saying</h1>
         <div className="lg:w-[680px] lg:h-[400px] md:w-[480px]  w-[300px] h-[200px] md:h-[280px] relative">
           <div className="relative  overflow-hidden rounded-lg h-full">
             <div className=" duration-700 ease-in-out" data-carousel-item>
